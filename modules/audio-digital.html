@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101510">
+    <meta name="description" content="Conheça o áudio digital em três etapas: o que é, como o som vira um arquivo e quais formatos e cuidados de qualidade usamos no cotidiano.">
+    <title>Áudio Digital para Sistemas Multimídia | Multimídia Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/audio-digital.css">
+    <script src="../js/audio-digital.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+    <header class="site-header audio-header">
+      <a class="brand" href="../index.html" aria-label="Multimídia Academy, página inicial">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-name">Multimídia <strong>Academy</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação do curso">
+        <a href="../index.html">Voltar à homepage</a>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div class="audio-intro page-width">
+        <p class="eyebrow">CURSO PRINCIPAL · CONCEITOS ESSENCIAIS</p>
+        <h1>Áudio Digital <span>para Sistemas Multimídia</span></h1>
+        <p class="audio-introduction">Da mensagem de voz à música: entenda o caminho do som em três etapas. As mídias de demonstração serão integradas posteriormente.</p>
+      </div>
+
+      <nav class="audio-index page-width" aria-label="Índice do curso">
+        <p class="eyebrow">TÓPICOS DO CURSO</p>
+        <ol class="audio-index-list">
+          <li><a href="#fundamentals"><span aria-hidden="true">01</span>O que é áudio digital?</a></li>
+          <li><a href="#recording-digitization"><span aria-hidden="true">02</span>Como o som vira um arquivo?</a></li>
+          <li><a href="#formats-compression"><span aria-hidden="true">03</span>Formatos e Qualidade</a></li>
+        </ol>
+      </nav>
+
+      <section class="audio-section page-width" aria-labelledby="fundamentals">
+        <p class="eyebrow">01 · FUNDAMENTOS</p>
+        <h2 id="fundamentals" tabindex="-1">O que é áudio digital?</h2>
+        <div class="audio-format-grid">
+          <article class="audio-format-card" aria-labelledby="sound-propagation">
+            <h3 id="sound-propagation">Som é vibração</h3>
+            <p>Uma fonte vibrante produz variações de pressão que se propagam pelo ar. As partículas oscilam localmente, sem viajar da fonte até o ouvido. O som precisa de um meio: não se propaga no vácuo.</p>
+            <p><strong>Exemplo:</strong> nossa voz faz o ar vibrar e chega aos ouvidos de quem escuta.</p>
+          </article>
+          <article class="audio-format-card" aria-labelledby="frequency-amplitude">
+            <h3 id="frequency-amplitude">Frequência e amplitude</h3>
+            <p>Frequência é o número de ciclos por segundo, em hertz (Hz): em tons simples, maior frequência significa som mais agudo. Amplitude é o tamanho da variação do sinal; em condições comparáveis, maior amplitude de pressão significa maior intensidade, não uma nota mais aguda.</p>
+            <p><strong>Exemplo:</strong> podemos falar mais forte sem mudar a nota da voz. Flauta e violino podem tocar a mesma nota e soar diferentes pelo timbre. Para comparar frequência e amplitude, altere uma de cada vez.</p>
+          </article>
+          <article class="audio-format-card" aria-labelledby="analog-digital-signals">
+            <h3 id="analog-digital-signals">Analógico e digital</h3>
+            <p>O sinal analógico varia continuamente, como a tensão de um microfone. O áudio digital representa o sinal por amostras com valores quantizados, codificados como números.</p>
+            <p><strong>Exemplo:</strong> uma mensagem de voz é guardada como dados que o celular pode transmitir e reproduzir.</p>
+          </article>
+        </div>
+        <aside class="audio-media-slot" aria-label="Mídias planejadas para os fundamentos">
+          <p><strong>Mídias em preparação:</strong> fotografia original da captação e ilustração vetorial de uma onda.</p>
+        </aside>
+      </section>
+
+      <section class="audio-section page-width" aria-labelledby="recording-digitization">
+        <p class="eyebrow">02 · CAPTURA</p>
+        <h2 id="recording-digitization" tabindex="-1">Como o som vira um arquivo?</h2>
+
+        <figure class="audio-recording-flow">
+          <figcaption>Esquema didático: da voz à reprodução do som</figcaption>
+          <ol class="audio-recording-steps">
+            <li>Voz</li>
+            <li>Microfone</li>
+            <li>Amostragem</li>
+            <li>Quantização</li>
+            <li>Dados digitais</li>
+            <li>Reprodução</li>
+          </ol>
+        </figure>
+
+        <div class="audio-format-grid">
+        <article class="audio-format-card" aria-labelledby="sound-capture">
+          <h3 id="sound-capture">Captação</h3>
+          <p>O microfone transforma variações de pressão sonora em um sinal elétrico.</p>
+          <p><strong>Exemplo:</strong> o microfone do celular capta sua fala ao gravar uma mensagem.</p>
+        </article>
+
+        <article class="audio-format-card" aria-labelledby="audio-sampling" data-digitization-stage="sampling">
+          <h3 id="audio-sampling">Amostragem</h3>
+          <p>O conversor mede o sinal em instantes regulares. A taxa de amostragem indica quantas medidas são feitas por segundo.</p>
+          <p><strong>Exemplo:</strong> sua voz em uma chamada é representada por uma sequência de amostras.</p>
+        </article>
+
+        <article class="audio-format-card" aria-labelledby="audio-quantization" data-digitization-stage="quantization">
+          <h3 id="audio-quantization">Quantização</h3>
+          <p>Cada medida recebe um dos valores disponíveis. A profundidade de bits determina quantos níveis podem ser usados.</p>
+          <p><strong>Analogia:</strong> uma régua com mais divisões permite registrar diferenças menores; isso não elimina ruído ou distorção da gravação.</p>
+        </article>
+
+        <article class="audio-format-card" aria-labelledby="audio-storage">
+          <h3 id="audio-storage">Armazenamento</h3>
+          <p>Os valores são codificados como dados binários e organizados em arquivos.</p>
+          <p><strong>Exemplo:</strong> o aplicativo salva sua mensagem para enviar e ouvir depois.</p>
+        </article>
+
+        <article class="audio-format-card" aria-labelledby="audio-playback">
+          <h3 id="audio-playback">Reprodução</h3>
+          <p>Os dados permitem reconstruir um sinal elétrico. O alto-falante ou fone transforma esse sinal em vibrações no ar.</p>
+          <p><strong>Exemplo:</strong> quando alguém ouve sua mensagem, o aparelho faz o caminho de volta.</p>
+        </article>
+        </div>
+        
+        <figure class="audio-digitization" aria-labelledby="digitization-title">
+          <figcaption>
+            <h3 id="digitization-title">Animação interativa: como o som se torna digital</h3>
+            <p id="digitization-description">Veja como o sinal é medido e cada medida é aproximada a um nível disponível. Este é um esquema didático, não uma conversão de áudio real; os níveis são ilustrativos e a amplitude é normalizada.</p>
+          </figcaption>
+          <div id="digitization-visual" hidden>
+            <canvas id="digitization-canvas" width="720" height="300" role="img" aria-label="Sinal analógico com pontos de amostragem e níveis de quantização" aria-describedby="digitization-description digitization-legend">O sinal é medido em instantes regulares e cada medida é aproximada a um dos níveis disponíveis.</canvas>
+            <ul id="digitization-legend" class="audio-signal-legend" aria-label="Legenda do esquema">
+              <li><span class="audio-signal-line" aria-hidden="true"></span>Verde: sinal analógico (linha)</li>
+              <li><span class="audio-signal-sample" aria-hidden="true"></span>Azul: amostragem (círculos)</li>
+              <li><span class="audio-signal-level" aria-hidden="true"></span>Amarelo: quantização (quadrados)</li>
+            </ul>
+          </div>
+          <div id="digitization-controls" class="audio-animation-controls" hidden>
+            <button type="button" id="digitization-start">Iniciar</button>
+            <button type="button" id="digitization-pause" disabled>Pausar</button>
+            <button type="button" id="digitization-reset">Reiniciar</button>
+          </div>
+          <p id="digitization-status" class="audio-animation-status" role="status" aria-live="polite"></p>
+          <noscript><p>A descrição do esquema e os cards abaixo explicam as etapas sem JavaScript.</p></noscript>
+        </figure>
+
+        <aside class="audio-media-slot" aria-label="Mídias planejadas para a digitalização">
+          <p><strong>Mídias em preparação:</strong> gravação original e vídeo da captação.</p>
+        </aside>
+      </section>
+
+      <section class="audio-section page-width" aria-labelledby="formats-compression">
+        <p class="eyebrow">03 · ESCOLHA DO ARQUIVO</p>
+        <h2 id="formats-compression" tabindex="-1">Formatos e Qualidade</h2>
+
+        <section class="audio-topic" aria-labelledby="format-codec">
+          <h3 id="format-codec">Como escolher?</h3>
+          <p>O contêiner organiza o arquivo; o codec define sua codificação. Por exemplo, um arquivo M4A pode conter áudio AAC. O tamanho depende da duração, dos canais e da codificação: um arquivo maior não garante uma gravação melhor.</p>
+        </section>
+
+        <section class="audio-topic" aria-labelledby="common-audio-formats">
+          <h3 id="common-audio-formats">WAV, MP3, FLAC e AAC</h3>
+          <div class="audio-format-grid">
+            <article class="audio-format-card" aria-labelledby="wav-format">
+              <h4 id="wav-format">WAV</h4>
+              <p>Contêiner frequentemente usado com áudio PCM sem compressão.</p>
+              <p><strong>Uso:</strong> guardar a gravação principal para editar depois.</p>
+            </article>
+            <article class="audio-format-card" aria-labelledby="mp3-format">
+              <h4 id="mp3-format">MP3</h4>
+              <p>Compressão com perdas, que descarta parte da informação para reduzir o tamanho.</p>
+              <p><strong>Uso:</strong> compartilhar áudio usando menos espaço.</p>
+            </article>
+            <article class="audio-format-card" aria-labelledby="flac-format">
+              <h4 id="flac-format">FLAC</h4>
+              <p>Compressão sem perdas: recupera os mesmos dados de áudio fornecidos à codificação.</p>
+              <p><strong>Uso:</strong> arquivar áudio preservando seus dados.</p>
+            </article>
+            <article class="audio-format-card" aria-labelledby="aac-format">
+              <h4 id="aac-format">AAC</h4>
+              <p>Codificação com perdas comum em serviços e dispositivos multimídia.</p>
+              <p><strong>Uso:</strong> distribuir áudio, por exemplo, em M4A.</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="audio-format-grid">
+        <article class="audio-format-card" aria-labelledby="lossy-lossless">
+          <h3 id="lossy-lossless">Compressão com perdas e sem perdas</h3>
+          <p>Sem perdas permite recuperar os dados de áudio; com perdas descarta parte deles. Converter MP3 para FLAC não restaura o que foi perdido.</p>
+          <p><strong>Para comparar:</strong> use o mesmo trecho, duração e volume de reprodução semelhante, mudando apenas uma configuração por vez.</p>
+        </article>
+        <article class="audio-format-card" aria-labelledby="midi-events">
+          <h3 id="midi-events">MIDI e áudio gravado</h3>
+          <p>MIDI registra eventos musicais, como notas e duração, não a forma de onda de uma gravação. Um instrumento ou sintetizador interpreta esses eventos para produzir som.</p>
+          <p><strong>Exemplo:</strong> a mesma sequência pode soar como piano ou flauta ao trocar o timbre.</p>
+        </article>
+        <article class="audio-format-card" aria-labelledby="mono-stereo">
+          <h3 id="mono-stereo">Mono e estéreo</h3>
+          <p>Mono tem um canal; estéreo tem dois, normalmente esquerdo e direito. Mais canais não significam automaticamente mais qualidade.</p>
+          <p><strong>Exemplo:</strong> mono pode atender uma narração; estéreo ajuda a representar o espaço de uma cena.</p>
+        </article>
+        <article class="audio-format-card" aria-labelledby="noise-clipping">
+          <h3 id="noise-clipping">Ruído e clipping</h3>
+          <p>Ruído é som indesejado, como um ventilador. Clipping é a distorção causada ao ultrapassar o limite do sinal; baixar o volume depois não recupera os picos cortados.</p>
+          <p><strong>Na gravação:</strong> escolha um ambiente tranquilo, teste o microfone e ajuste o ganho para evitar distorção.</p>
+        </article>
+        </div>
+        <aside class="audio-media-slot" aria-label="Mídias planejadas para formatos e qualidade">
+          <p><strong>Mídias em preparação:</strong> exemplos do mesmo áudio em diferentes formatos e composição MIDI com prévia renderizada.</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer page-width audio-footer">
+      <a class="footer-brand" href="../index.html">Multimídia Academy</a>
+      <span class="footer-context">Projeto acadêmico · Sistemas Multimídia</span>
+    </footer>
+  </body>
+</html>

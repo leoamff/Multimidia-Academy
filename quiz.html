@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101510">
+    <meta name="description" content="Teste seus conhecimentos sobre Áudio Digital para Sistemas Multimídia com cinco perguntas sorteadas a cada tentativa.">
+    <title>Quiz Interativo | Multimídia Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <script src="js/questions.js" defer></script>
+    <script src="js/quiz.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <header class="site-header quiz-header">
+      <a class="brand" href="index.html" aria-label="Multimídia Academy, página inicial">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-name">Multimídia <strong>Academy</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação do quiz">
+        <a href="index.html">Homepage</a>
+        <a href="modules/audio-digital.html">Curso</a>
+      </nav>
+    </header>
+
+    <main id="main-content" class="quiz-main page-width" tabindex="-1">
+      <div class="quiz-intro">
+        <p class="eyebrow">ÁUDIO DIGITAL PARA SISTEMAS MULTIMÍDIA</p>
+        <h1>Quiz <span>Interativo</span></h1>
+        <p>Cinco perguntas por tentativa. Responda e confira seu resultado com as explicações ao final.</p>
+      </div>
+
+      <noscript><p>Ative o JavaScript para responder ao quiz. O <a href="modules/audio-digital.html">conteúdo do curso</a> continua disponível para leitura.</p></noscript>
+
+      <form id="quiz-form" class="quiz-form" hidden>
+        <p id="question-progress" class="quiz-progress-label" aria-live="polite"></p>
+        <progress id="quiz-progress" max="5" value="0" aria-labelledby="question-progress"></progress>
+        <fieldset id="question-fieldset">
+          <legend><span id="question-text" tabindex="-1"></span></legend>
+          <div id="question-options" class="quiz-options"></div>
+        </fieldset>
+        <div class="quiz-form-actions">
+          <button class="quiz-button" type="submit" id="next-question">Avançar <span class="card-arrow" aria-hidden="true"></span></button>
+        </div>
+      </form>
+
+      <section id="quiz-results" class="quiz-results" aria-labelledby="results-title" hidden>
+        <h2 id="results-title" tabindex="-1">Resultado da tentativa</h2>
+        <p id="score-summary" class="quiz-score"></p>
+        <button id="restart-quiz" class="quiz-button" type="button">Nova tentativa <span class="card-arrow" aria-hidden="true"></span></button>
+        <h3 class="quiz-review-heading">Confira suas respostas</h3>
+        <ol id="answer-review" class="quiz-answer-review"></ol>
+      </section>
+    </main>
+
+    <footer class="site-footer page-width quiz-footer">
+      <a class="footer-brand" href="index.html">Multimídia Academy</a>
+      <span class="footer-context">Projeto acadêmico · Sistemas Multimídia</span>
+      <a href="modules/audio-digital.html">Voltar ao curso</a>
+    </footer>
+  </body>
+</html>

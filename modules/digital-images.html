@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101510">
+    <meta name="description" content="Aprenda os fundamentos das imagens digitais, pixels, resolução e formatos JPG, PNG e SVG.">
+    <title>Imagens Digitais | Multimídia Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/digital-images.css">
+    <script src="../js/digital-images.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Multimídia Academy, página inicial">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-name">Multimídia <strong>Academy</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação do módulo">
+        <a href="../index.html">Voltar à homepage</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero page-width module-hero" aria-labelledby="module-title">
+        <div class="hero-copy">
+          <p class="eyebrow">MÓDULO 01 · FUNDAMENTOS</p>
+          <h1 id="module-title">Imagens <span>Digitais</span></h1>
+          <p class="hero-description">Conheça como imagens são representadas, armazenadas e exibidas. Ao final, você saberá quando usar formatos matriciais ou vetoriais.</p>
+        </div>
+      </section>
+
+      <nav class="module-index page-width" aria-label="Índice do módulo">
+        <p class="eyebrow module-index-label">NAVEGUE PELOS CONCEITOS</p>
+        <ol class="module-index-list">
+          <li><a href="#digital-image"><span class="module-index-number">01</span>Imagem digital</a></li>
+          <li><a href="#pixels-resolution"><span class="module-index-number">02</span>Pixels e resolução</a></li>
+          <li><a href="#raster-images"><span class="module-index-number">03</span>Imagens matriciais</a></li>
+          <li><a href="#vector-images"><span class="module-index-number">04</span>Imagens vetoriais</a></li>
+          <li><a href="#image-formats"><span class="module-index-number">05</span>JPG, PNG e SVG</a></li>
+          <li><a href="#practical-examples"><span class="module-index-number">06</span>Exemplos práticos</a></li>
+        </ol>
+      </nav>
+
+      <div class="module-content">
+        <section class="module-section page-width" aria-labelledby="digital-image">
+          <div class="module-section-heading">
+            <p class="eyebrow">01 · CONCEITO</p>
+            <h2 id="digital-image" tabindex="-1">O que é uma imagem digital?</h2>
+          </div>
+          <p>Uma imagem digital é uma representação visual guardada como dados que um dispositivo consegue interpretar e exibir. Fotografias, ilustrações e ícones são exemplos do dia a dia.</p>
+          <p>Esses dados podem descrever uma grade de pontos coloridos, como nas imagens matriciais, ou instruções para desenhar formas, como nas imagens vetoriais. Essa diferença afeta como cada tipo se comporta ao ser ampliado.</p>
+          <aside class="module-example">
+            <strong>Exemplo simples</strong>
+            <p>Uma fotografia feita pelo celular costuma ser matricial. O símbolo de uma marca pode ser vetorial para continuar nítido em tamanhos diferentes.</p>
+          </aside>
+        </section>
+
+        <section class="module-section page-width" aria-labelledby="pixels-resolution">
+          <div class="module-section-heading">
+            <p class="eyebrow">02 · DETALHE</p>
+            <h2 id="pixels-resolution" tabindex="-1">O que são pixels e resolução?</h2>
+          </div>
+          <p>Pixel é uma pequena unidade de cor que, junto a muitas outras, forma uma imagem matricial. Vistas de longe, as unidades se combinam e percebemos a fotografia ou ilustração completa.</p>
+          <p>A resolução em pixels informa quantas unidades existem na largura e na altura. Por exemplo:</p>
+          <p class="module-example module-resolution-example"><code>1920 × 1080 = 2.073.600 pixels</code></p>
+          <p>Mais pixels podem registrar mais detalhes, mas não garantem sozinhos uma imagem melhor: foco, iluminação e compressão também importam. Para impressão, a densidade de pixels por área também influencia a nitidez.</p>
+        </section>
+
+        <section class="module-section page-width" aria-labelledby="raster-images">
+          <div class="module-section-heading">
+            <p class="eyebrow">03 · GRADE DE PIXELS</p>
+            <h2 id="raster-images" tabindex="-1">Imagens matriciais</h2>
+          </div>
+          <p>Uma imagem matricial, também chamada raster ou bitmap, é uma grade de pixels. Cada pixel guarda uma cor; juntos, eles formam a imagem. JPG e PNG são formatos matriciais comuns.</p>
+          <ul class="module-points">
+            <li>É adequada para fotografias e cenas com muitos detalhes ou transições de cor.</li>
+            <li>Tem dimensões definidas em pixels, como 1200 × 800.</li>
+            <li>Ao ampliar além dos pixels disponíveis, os pontos podem ficar visíveis e as bordas menos nítidas.</li>
+          </ul>
+          <aside class="module-example">
+            <strong>Exemplo simples</strong>
+            <p>Imagine um mosaico: cada peça tem uma cor. Aumentar o mosaico não cria novas peças com detalhes reais; o programa apenas estima como preencher o espaço entre elas.</p>
+          </aside>
+        </section>
+
+        <section class="module-section page-width" aria-labelledby="vector-images">
+          <div class="module-section-heading">
+            <p class="eyebrow">04 · FORMAS E CAMINHOS</p>
+            <h2 id="vector-images" tabindex="-1">Imagens vetoriais</h2>
+          </div>
+          <p>Uma imagem vetorial descreve formas por meio de caminhos, curvas, contornos e cores. Em vez de guardar cada ponto de uma grade, guarda instruções para desenhar a arte. SVG é um formato vetorial usado na web.</p>
+          <ul class="module-points">
+            <li>É indicada para logotipos, ícones, diagramas e ilustrações com formas definidas.</li>
+            <li>O navegador pode redesenhar as formas em tamanhos diferentes, mantendo contornos nítidos.</li>
+            <li>Não é a melhor escolha para fotografias complexas; um SVG também pode incorporar conteúdo matricial.</li>
+          </ul>
+          <aside class="module-example">
+            <strong>Exemplo simples</strong>
+            <p>Um círculo vetorial pode ser descrito por sua posição, raio, contorno e preenchimento. A mesma instrução pode desenhar um ícone pequeno ou um cartaz grande.</p>
+          </aside>
+        </section>
+
+        <section class="module-section page-width" aria-labelledby="image-formats">
+          <div class="module-section-heading">
+            <p class="eyebrow">05 · ESCOLHA DO ARQUIVO</p>
+            <h2 id="image-formats" tabindex="-1">Diferenças entre JPG, PNG e SVG</h2>
+          </div>
+          <p>A extensão ajuda a identificar como o conteúdo é armazenado e quais usos combinam com o arquivo. JPG e PNG são matriciais; SVG é vetorial.</p>
+
+          <div class="module-format-grid">
+            <article class="module-format-card" aria-labelledby="jpg-title">
+              <h3 id="jpg-title">JPG / JPEG</h3>
+              <dl class="module-format-details">
+                <dt>Representação</dt><dd>Imagem matricial formada por pixels.</dd>
+                <dt>Compressão</dt><dd>Com perdas.</dd>
+                <dt>Transparência</dt><dd>Não suporta transparência.</dd>
+                <dt>Uso comum</dt><dd>Fotografias.</dd>
+                <dt>Ampliação</dt><dd>Detalhes podem ficar pixelados ou revelar artefatos.</dd>
+              </dl>
+            </article>
+
+            <article class="module-format-card" aria-labelledby="png-title">
+              <h3 id="png-title">PNG</h3>
+              <dl class="module-format-details">
+                <dt>Representação</dt><dd>Imagem matricial formada por pixels.</dd>
+                <dt>Compressão</dt><dd>Sem perdas.</dd>
+                <dt>Transparência</dt><dd>Suporta transparência.</dd>
+                <dt>Uso comum</dt><dd>Capturas de tela, gráficos e imagens com áreas transparentes.</dd>
+                <dt>Ampliação</dt><dd>Também pode mostrar pixels; não ganha detalhes ao ser ampliado.</dd>
+              </dl>
+            </article>
+
+            <article class="module-format-card" aria-labelledby="svg-title">
+              <h3 id="svg-title">SVG</h3>
+              <dl class="module-format-details">
+                <dt>Representação</dt><dd>Imagem vetorial descrita em XML.</dd>
+                <dt>Compressão</dt><dd>Pode usar compressão de texto, como SVGZ.</dd>
+                <dt>Transparência</dt><dd>Pode ter áreas transparentes.</dd>
+                <dt>Uso comum</dt><dd>Logotipos, ícones, diagramas e ilustrações.</dd>
+                <dt>Ampliação</dt><dd>As formas são redesenhadas e mantêm contornos nítidos.</dd>
+              </dl>
+            </article>
+          </div>
+
+          <aside class="module-example module-format-tip">
+            <strong>Regra prática</strong>
+            <p>Escolha JPG para fotografias leves, PNG quando precisar de transparência ou preservar detalhes sem perdas, e SVG para formas que precisam continuar nítidas em vários tamanhos.</p>
+          </aside>
+        </section>
+
+        <section class="module-section page-width module-practical-examples" aria-labelledby="practical-examples">
+          <div class="module-section-heading">
+            <p class="eyebrow">06 · OBSERVE OS FORMATOS</p>
+            <h2 id="practical-examples" tabindex="-1">Exemplos práticos</h2>
+          </div>
+
+          <section class="module-example-group" aria-labelledby="banner-examples-title">
+            <div class="module-example-heading">
+              <h3 id="banner-examples-title">Banner NEXT LEVEL: JPG, PNG e GIF</h3>
+              <p>As três versões têm 468 × 60 pixels. Compare como o formato e a compressão afetam o mesmo banner.</p>
+            </div>
+            <div class="module-banner-grid">
+              <figure class="module-banner-card">
+                <div class="module-banner-preview">
+                  <img src="../assets/images/raster/banner_sistemas.jpg" width="468" height="60" alt="Banner NEXT LEVEL em JPEG" loading="lazy" decoding="async">
+                </div>
+                <figcaption>
+                  <strong>JPG / JPEG</strong>
+                  <span>Com perdas; 46.008 bytes. A compressão pode criar artefatos em texto e bordas.</span>
+                </figcaption>
+              </figure>
+              <figure class="module-banner-card">
+                <div class="module-banner-preview">
+                  <img src="../assets/images/raster/banner_sistemas.png" width="468" height="60" alt="Banner NEXT LEVEL em PNG" loading="lazy" decoding="async">
+                </div>
+                <figcaption>
+                  <strong>PNG</strong>
+                  <span>Sem perdas; 34.622 bytes. Preserva melhor os contornos e o texto deste banner.</span>
+                </figcaption>
+              </figure>
+              <figure class="module-banner-card">
+                <div class="module-banner-preview">
+                  <img src="../assets/images/raster/banner_sistemas.gif" width="468" height="60" alt="Banner NEXT LEVEL em GIF" loading="lazy" decoding="async">
+                </div>
+                <figcaption>
+                  <strong>GIF</strong>
+                  <span>Paleta limitada; 15.085 bytes. Este arquivo tem um quadro, portanto é estático.</span>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="module-example-group" aria-labelledby="diagram-comparison-title">
+            <div class="module-example-heading">
+              <h3 id="diagram-comparison-title">Diagrama do plano inclinado: PNG e SVG</h3>
+              <p>Use o controle para ampliar as duas versões pela mesma escala. As áreas de visualização têm o mesmo tamanho; o SVG é ajustado sem corte à sua proporção original.</p>
+            </div>
+
+            <div class="module-zoom-controls">
+              <label for="comparison-zoom">Zoom sincronizado</label>
+              <input id="comparison-zoom" type="range" min="1" max="4" step="0.25" value="1" aria-describedby="comparison-zoom-help">
+              <output id="comparison-zoom-value" for="comparison-zoom" aria-live="polite">100%</output>
+              <p id="comparison-zoom-help">O percentual representa a ampliação relativa ao tamanho inicial de exibição de cada imagem. Os desenhos têm dimensões e proporções originais diferentes. Use as setas do teclado ou arraste o controle; faixa de 100% a 400%.</p>
+            </div>
+
+            <div class="module-comparison-grid">
+              <figure class="module-comparison-card">
+                <div class="module-comparison-viewport">
+                  <div class="module-comparison-stage" data-zoom-image>
+                    <img class="module-comparison-image module-comparison-raster" src="../assets/images/raster/atividade-sistemas-multi.png" width="640" height="480" alt="Diagrama do plano inclinado em PNG matricial, com linhas e anotações" loading="lazy" decoding="async">
+                  </div>
+                </div>
+                <figcaption>
+                  <strong>PNG · matricial · 640 × 480</strong>
+                  <span>Ao ampliar, a grade de pixels pode ficar visível. O CSS usa image-rendering: pixelated intencionalmente para evidenciar os pixels do PNG. O arquivo .gif de mesmo nome também é PNG e não será usado aqui.</span>
+                </figcaption>
+              </figure>
+              <figure class="module-comparison-card">
+                <div class="module-comparison-viewport">
+                  <div class="module-comparison-stage" data-zoom-image>
+                    <img class="module-comparison-image module-comparison-vector" src="../assets/images/vector/atividade-sistemas-multimidias.svg" width="584" height="306" alt="Diagrama do plano inclinado em SVG vetorial, com formas e anotações" loading="lazy" decoding="async">
+                  </div>
+                </div>
+                <figcaption>
+                  <strong>SVG · vetorial · 584 × 306</strong>
+                  <span>Os traços vetoriais visíveis nesta comparação permanecem nítidos. O SVG original contém um PNG embutido oculto.</span>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer page-width">
+      <a class="footer-brand" href="../index.html">Multimídia Academy</a>
+      <span class="footer-context">Projeto acadêmico · Sistemas Multimídia</span>
+    </footer>
+  </body>
+</html>
